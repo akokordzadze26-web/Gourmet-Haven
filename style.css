@@ -1,0 +1,154 @@
+/* ძირითადი პარამეტრები */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    background-image: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.95)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ნავიგაციის ზოლი */
+header {
+    background-color: rgba(20, 20, 20, 0.9);
+    border-bottom: 1px solid #c5a880;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #c5a880;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #c5a880;
+}
+
+/* მთავარი სექცია (Hero) */
+.hero {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #c5a880;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e0c39e;
+    transform: translateY(-2px);
+}
+
+/* მოკლე ინფორმაცია */
+.about-brief {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: rgba(25, 25, 25, 0.8);
+    flex-wrap: wrap;
+}
+
+.info-box {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-top: 3px solid #c5a880;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.info-box h3 {
+    color: #c5a880;
+    margin-bottom: 10px;
+}
+
+/* ფუტერი */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a0a0a;
+    color: #666;
+    font-size: 14px;
+    border-top: 1px solid #222;
+}
+
+/* რესპონსივი ტელეფონებისთვის */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links li {
+        margin: 0 10px;
+    }
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}
